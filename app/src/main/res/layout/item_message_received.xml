@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="10dp"
+    tools:background="@color/theme_grey_lighter">
+
+    <TextView
+        android:id="@+id/username_textview"
+        style="@style/TextView.MessageMetaTop"
+        android:layout_width="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="start"
+        app:layout_constraintEnd_toEndOf="@id/message_cardview"
+        app:layout_constraintStart_toStartOf="@id/message_cardview"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="John Doe looooooooooong looooooooooong looooooooooong" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/message_cardview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:layout_marginStart="@dimen/activity_horizontal_margin"
+        tools:layout_marginEnd="80dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_textview">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/message_textview"
+                style="@style/TextView.MessageContent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Test message looooooooooong looooooooooong looooooooooong" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/timestamp_textview"
+        style="@style/TextView.MessageMetaBottom"
+        android:layout_width="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="2dp"
+        android:gravity="start"
+        app:layout_constraintEnd_toEndOf="@id/message_cardview"
+        app:layout_constraintStart_toStartOf="@id/message_cardview"
+        app:layout_constraintTop_toBottomOf="@id/message_cardview"
+        tools:text="11:40 looooooooooong looooooooooong looooooooooong looooooooooong looooooooooong" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

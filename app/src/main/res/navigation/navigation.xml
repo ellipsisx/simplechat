@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="dk.ellipsisx.simplechat.ui.login.LoginFragment"
+        android:label="@string/login_title"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_conversation"
+            app:destination="@id/navigation_conversation" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_conversation"
+        android:name="dk.ellipsisx.simplechat.ui.conversation.ConversationFragment"
+        android:label="@string/conversation_title"
+        tools:layout="@layout/fragment_conversation" />
+
+</navigation>

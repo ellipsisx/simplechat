@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SimpleChat</string>
+
+    <string name="app_error_unknown">Unknown error</string>
+
+    <!-- Login -->
+    <string name="login_title">Login</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_button">Login</string>
+
+    <!-- Conversation -->
+    <string name="conversation_title">Messages</string>
+    <string name="conversation_text_message_hint">Write a message</string>
+    <string name="conversation_error_send">Could not send</string>
+
+</resources>

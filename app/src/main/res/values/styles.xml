@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Layout.Root">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/theme_grey_lighter</item>
+    </style>
+
+    <style name="Layout.Standard">
+        <item name="android:paddingStart">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingEnd">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+    </style>
+
+    <style name="Layout.ScreenOverlay">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/theme_screen_overlay</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <!--............................................................................-->
+
+    <style name="ScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--............................................................................-->
+
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_grey_darkest</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextView.Standard">
+        <item name="android:fontFamily">@font/saira_condensed</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingMultiplier">0.75</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextView.SingleLine">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TextView.MessageContent">
+        <item name="android:fontFamily">@font/saira_condensed</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:lineSpacingMultiplier">0.75</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextView.MessageMetaTop" parent="TextView.SingleLine">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/saira</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">@color/theme_grey_darkest</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.MessageMetaBottom" parent="TextView.SingleLine">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/saira</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:textColor">@color/theme_grey_darker</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!--............................................................................-->
+
+    <style name="EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="EditText.Standard">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:fontFamily">@font/saira_condensed</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/theme_grey_darkest</item>
+        <item name="android:textColorHint">@color/theme_grey_medium</item>
+    </style>
+
+    <style name="EditText.Standard.SingleLine">
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="EditText.Standard.Borderless">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--............................................................................-->
+
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Button.Standard">
+        <item name="android:layout_height">44dp</item>
+        <item name="android:fontFamily">@font/saira</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/theme_white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--............................................................................-->
+    <style name="Image">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Image.Button">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/button_simple</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <!--............................................................................-->
+
+    <style name="CircularProgress" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/theme_secondary</item>
+    </style>
+
+</resources>
